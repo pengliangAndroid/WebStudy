@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p{
+            width: 400px;
+            line-height: 30px;
+        }
+
+        label{
+            font-size: 200%;
+        }
+
+        .text{
+            font-size: 50px;
+            line-height: 30px;
+            font-family: 幼圆,黑体;
+            font-style: italic;
+            font-weight: bold;
+            font-variant: small-caps;
+            overflow: hidden;
+        }
+
+        .text2{
+            font: 400 15px/24px "宋体";
+        }
+
+        .text3{
+            letter-spacing: 0.6cm;
+            word-spacing: 1cm;
+            text-transform: uppercase;
+            color: red;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        ul{
+            list-style-image: url(images/app_icon.png);
+            margin-left: 72px;
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #00cc66;
+            margin-right: 100px;
+            float: left;
+        }
+
+        #div1{
+            overflow: auto;
+        }
+
+        #div2{
+            overflow: visible;
+        }
+
+        #div3{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        文字文字文字文字文字文字文字文字文字文字文字文字
+        文字文字文字文字文字文字文字文字文字文字文字文字
+        文字文字文字文字文字文字文字文字文字文字文字文字
+        文字文字文字文字文字文字文字文字文字文字文字文字
+        文字文字文字文字文字文字
+    </p>
+
+    <div>
+        完美<label>清风徐来</label>测试
+    </div>
+
+    <p class="text">测试文字aaa</p>
+
+    <p class="text2">测试文字2</p>
+
+    <p class="text3">aaa 测试文字3</p>
+
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ul>
+
+    <div id="div1">其实很简单 其实很自然 两个人的爱由两人分担 其实并不难 是你太悲观 隔着一道墙不跟谁分享 不想让你为难 你不再需要给我个答案</div>
+	<div id="div2">其实很简单 其实很自然 两个人的爱由两人分担 其实并不难 是你太悲观 隔着一道墙不跟谁分享 不想让你为难 你不再需要给我个答案</div>
+	<div id="div3">其实很简单 其实很自然 两个人的爱由两人分担 其实并不难 是你太悲观 隔着一道墙不跟谁分享 不想让你为难 你不再需要给我个答案</div>
+
+   <table>
+       <tr>
+           <td>原始图片</td>
+           <td>加入黑白效果</td>
+       </tr>
+       <tr>
+           <td><img src="images/app_icon.png"></td>
+           <td><img src="images/app_icon.png" style="filter:grayscale()"></td>
+       </tr>
+   </table>
+</body>
+</html>
