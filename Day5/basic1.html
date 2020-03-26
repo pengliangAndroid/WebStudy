@@ -9,6 +9,18 @@
     //    alert("xxx")
 
         console.log("inner js.")
+        console.log(Math.abs('-2'))
+
+        var Person = function(name){
+            this.name = name;
+        };
+
+        var person = new Person("xiaoming");
+        console.log(person instanceof Object);
+        console.log(person instanceof Object);
+
+        console.log(person.toString());
+        console.log(Object.prototype.toString.call(person));
     </script>
 </head>
 <body>

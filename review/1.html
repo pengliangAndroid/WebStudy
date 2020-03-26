@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒模型和定位</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color:burlywood;
+            padding: 10px;
+            border: 1px solid red;
+            margin: 10px;
+            float: left;
+        }
+
+        #box2{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color:green;
+            padding: 10px;
+            border: 1px solid red;
+            margin: 10px;
+        }
+
+    </style>
+
+  
+</head>
+<body>
+
+    <div id="box1">
+
+    </div>
+
+    <div id="box2">
+
+    </div>
+
+    <div id="box3" style="width: 100px;height: 100px;background-color: grey;">
+
+    </div>
+
+    <p>
+        追求极致，克制成就自我
+    </p>
+
+    <script>
+        var box1 = document.getElementById("box1");
+        console.log(box1);
+        console.log(box1.style.display);
+        console.log(box1.style.position);
+
+        console.log(getComputedStyle(box1,null).position);
+        console.log(getComputedStyle(box1,null).display);
+    </script>
+    
+</body>
+</html>

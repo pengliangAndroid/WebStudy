@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+
+    <div class="box1">
+        <input id="btnAjax" type="button" value="获取baidu网站内容">
+
+        <p id="content"></p>
+
+    </div>
+    <script>
+        var btn = document.getElementById("btnAjax");
+        btn.onclick = function(){
+            var http = new XMLHttpRequest();
+            http.open("get","https://www.baidu.com");
+
+            http.send();
+
+            http.onreadystatechange = function(){
+                if(http.readyState == 4 && http.status == 200){
+                    console.log("访问成功");
+                    console.log(http.responseText);
+                    document.getElementById("content").textContent=http.responseText;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
